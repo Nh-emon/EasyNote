@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.all.js"></script>
+</head>
+<body class="flex_center">
+
+
+<!-- start new code here -->
+
+<div id="dictonary" class="border_min radius_min shadow_mid">
+
+<!-- start header -->
+    <div id="dictonary-header">
+        <div id="headerTitle" class="title center space_y_min">English Dictonary</div>
+        <div id="searchBox" class="space_y_small">
+            <input type="text" class="text_input" id="dictonaryInput" required>
+            <i class="fa-solid fa-circle-xmark i_rec round min middle_y" id="deleteInput"></i>
+            <i class="fa-solid fa-magnifying-glass  middle_y"id="seachIcon"></i>
+            <!-- <i class="fa-solid fa-volume-high"></i>             -->
+        </div>
+        <div id="header-message" class="font_light flex">
+           <span id="instruction-message">type a word then Enter</span>
+           <div class='loader min' id="gifLoad"></div>
+        </div>
+    </div>
+<!-- end header -->
+
+    <div id="mainBody">
+
+        <div id="mainBody-header" class="flex_between space_y_mid">
+            <div id="word-details">
+                <p id="main-word">Fun</p>
+                <div id="word-extra" class="font_light">adjective/fan/</div>
+            </div>
+            <i class="fa-solid fa-volume-high i_rec round mid" id="wordAudio"></i>            
+        </div>
+
+       <ul id="contents">
+
+        <li id="content">
+            <p id="contentTitle">Meaning</p>
+            <p id="content-meaning">the word means...</p>
+        </li>   
+        <li id="content">
+            <p id="contentTitle">Example</p>
+            <p id="content-example">here the example .....</p>
+        </li>   
+        <li id="content">
+            <p id="contentTitle">Synmonyms</p>
+            <div id="synonyms" class="space_y_min flex wrap">
+<!--                 <span class="synonym-result">fun</span>
+                <span class="synonym-result">enjoy</span>
+                <span class="synonym-result">pleasure</span>                
+ -->            </div>
+        </li>   
+
+       </ul>
+
+    </div>
+
+</div>
+
+<!-- end new code -->
+
+
+
+
+
+
+
+
+<!-- custom -->
+<!-- start toastNotificati;on -->
+<div class="toastNotification">
+    </div>
+<!-- end toastNotificaiton -->
+
+    <!-- themeBtn here -->
+<div id="themeBtnContainer" class="flex_center">
+    <button class="round_btn" id="lightMode"><i class="fa-solid fa-sun"></i></button>
+    <button class="round_btn" id="darkMode"><i class="fa-solid fa-moon"></i></button>
+</div>
+
+    <!-- <script src="checkConnection.js"></script> -->
+   <script src="theme.js"></script>
+    <script src="app.js" defer></script>
+    <!-- by using defer it load the html load -->
+<!-- custom -->
+
+
+
+
+</body>
+</html>
