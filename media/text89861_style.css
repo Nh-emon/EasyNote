@@ -1,0 +1,69 @@
+*{    margin: 0;padding: 0;box-sizing: border-box;
+    list-style: none;text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    /* color */
+    --colorWhite: rgb(255, 255, 255);
+    --colorblack: rgb(0, 0, 0);
+    --colorRed: rgb(255, 0, 0);
+    --colorGreen: rgb(0, 255,0);
+    --colorCrimson: rgb(222, 15, 81);
+    --colorAqua: rgb(1, 255, 238);
+    --colorPurple: rgb(61, 17, 119);
+    --colorBlue: rgb(30, 7, 164);
+    --colorGrey: rgb(113, 112, 112);
+    /* end of color */
+    /* color transparent of white,balck,grey */
+    --colorWhite: rgba(255, 255, 255, 0.155);
+    --colorblack: rgba(0, 0, 0, 0.176);
+    --colorGrey: rgba(113, 112, 112, 0.205);
+     /* start elemetn color */
+     --bodyBg: rgb(6, 2, 28);
+     --bodyFOnt: rgb(252, 252, 252);
+     --bodyFOntLight: rgba(177, 173, 195, 0.229);
+     --ContainerBg: rgba(10, 9, 26, 0.943);
+     --boxBg:rgba(68, 56, 115, 0.252);
+     --boxBorder:rgba(74, 73, 80, 0.252);
+     --boxShadow:rgba(58, 29, 106, 0);
+     --primaryColor:rgb(255,100,0);
+     --secondaryColor:rgba(24, 187, 100, 0.986);
+     --scrollbarBgColor:rgba(21, 2, 47, 0.986);
+     --scrollbarThumbColor:rgba(249, 243, 254, 0.278);
+     --gradientBg1:linear-gradient(to top right,var(--ContainerBg),var(--boxBg));
+
+}
+body{width:100%;height:100vh;margin: 0;padding:1rem .5rem;background-color:var(--bodyBg);color: var(--bodyFOnt);position: relative;}
+
+#dictonary{background-color:var(--boxBg);padding:1rem 1rem 2rem 1rem;width:100%;max-width:450px}
+#searchBox{position:relative}
+#searchBox .text_input{padding-left: 2.3rem}
+#searchBox i{position:absolute;}
+#seachIcon{left: 0;width: 2rem;height: 2rem;line-height:2rem;text-align:center;font-size: 1.2rem}
+#deleteInput{transform:translate(-150%,-50%);opacity:0;pointer-events: none}
+#searchBox .text_input:valid ~ #deleteInput{opacity:1;pointer-events:auto}
+#spec_word{color:var(--bodyFOnt)}
+#header-message{width: 100%}
+
+#mainBody{margin:1rem 0;height: 0;overflow: hidden;opacity:0}
+#mainBody.active{height:auto;opacity:1;transition: all .4s ease-in-out}
+#main-word{font-size:1.5rem}
+
+#content{margin:.5rem 0;padding: .5rem 0;padding-left: 1rem;border:1px solid var(--boxBorder);box-shadow: 1px 2px 2px var(--boxShadow),-1px -2px 2px var(--boxShadow)}
+#contentTitle{font-size:1.2rem;color:var(--bodyFOntLight)}
+.synonym-result{padding:.3rem;border-bottom: 1px solid rgb(0,0,0,.2);cursor:pointer;background:var(--primaryColor);border-radius: .2rem;color:rgb(255,255,255)}
+
+
+#gifLoad{margin-top: .5rem}
+/* responsive font */
+@media(max-width:1000px){:root{font-size: 15px;}}
+@media(max-width:800px){:root{font-size: 14px;}}
+@media(max-width:600px){:root{font-size: 13px;}}
+@media(max-width:500px){:root{font-size: 12px;}}
+@media(max-width:400px){:root{font-size: 11px;}}
+
+
+
+
