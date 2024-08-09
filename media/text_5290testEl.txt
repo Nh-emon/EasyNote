@@ -1,0 +1,14 @@
+# start tab
+
+<div class="col-12 col-md-11 col-lg-9 rounded-2 each-content-section px-0 px-md-2 py-2" data-eltype="section">
+    <div class="tab-container my-3 shadow-sm border box-bg-1 rounded-2 w-100" id="tab10">
+        <ul class="tab-btn-container px-0 d-flex gap-2 gap-md-4 align-items-center" role="tablist" style="max-height:400px;">
+        <button class="tab-btn px-4 px-sm-2 py-2  rounded-0 active" data-enableeditcontent="true" data-bs-toggle="pill" aria-selected="true" role="tab" id="tab10-btn1" data-bs-target="#tab10-pane1">tab1</button>
+        <button class="tab-btn px-4 px-sm-2 py-2  rounded-0 " data-enableeditcontent="true" data-bs-toggle="pill" aria-selected="true" role="tab" id="tab10-btn2" data-bs-target="#tab10-pane2">tab2</button>
+        <button class="tab-btn px-4 px-sm-2 py-2  rounded-0 " data-enableeditcontent="true" data-bs-toggle="pill" aria-selected="true" role="tab" id="tab10-btn3" data-bs-target="#tab10-pane3">tab3</button>
+    </ul>
+    <div class="tab-content border-top-gray tab-content-container scroll scroll-min scroll-on-hover px-1 px-sm-2"><div class="tab-pane fade active show py-2 px-1 px-sm-2 mb-2" role="tabpanel" tabindex="0" id="tab10-pane1" aria-labelledby="#tab10-btn1"><span>content1</span></div>
+    <div class="tab-pane fade  py-2 px-1 px-sm-2 mb-2" role="tabpanel" tabindex="0" id="tab10-pane2" aria-labelledby="#tab10-btn2"><span>content2</span></div>
+    <div class="tab-pane fade  py-2 px-1 px-sm-2 mb-2" role="tabpanel" tabindex="0" id="tab10-pane3" aria-labelledby="#tab10-btn3"><span>content3</span></div></div></div></div>
+
+# end tab
