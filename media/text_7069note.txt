@@ -1,0 +1,28 @@
+if page is set for author :
+                          for user:show user details
+                                   show author details
+                                   set target subjet,chapter,topic
+                                   on reload back to easynote.free.nf
+
+                          for guest:show author details
+                                    set target subject,chapter,topic
+                                    on reload send to login page
+
+
+6.user logo hide problem
+8.code input small text
+
+
+1.load backup file
+2.setting menu
+3.link creation
+
+
+
+
+
+new
+1.load back up file
+2.fullscreen
+3.file sorting
+4.
